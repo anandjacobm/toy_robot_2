@@ -1,4 +1,4 @@
-# Table.new(x,y) to initialize a table
+# Lib::Table.new(x,y) to initialize a table
 module Lib
   class Table
     attr_accessor :x, :y

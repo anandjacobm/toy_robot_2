@@ -13,7 +13,7 @@ module Lib
 
       def validate_args
         raise CustomError, 'Not a valid point ON table' unless table.valid_point?(@args[:x], @args[:y])
-        raise CustomError, 'Not a valid face' unless Face.valid_face?(@args[:face])
+        raise CustomError, 'Not a valid face' unless robot.face.valid_face?(@args[:face])
       end
 
       def place_robot

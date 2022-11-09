@@ -14,6 +14,7 @@ module Main
   robot = Lib::Robot.new(face)
   outputter = Lib::Outputters::CliOutputter.new
   inputter = Lib::Inputters::CliInputter.new
+  parser = Lib::ParseInput.new
 
   # infinite loop to get input and process it
   loop do
@@ -25,7 +26,7 @@ module Main
     abort('Exiting Application!!!!') if input == 'Q'
 
     # changing the input to desired format and checking if it is valid command
-    command, args = Lib::ParseInput.parse(input)
+    command, args = parser.parse(input)
     args[:outputter] = outputter
     Lib::Command.to(command, robot, table, args).process
 

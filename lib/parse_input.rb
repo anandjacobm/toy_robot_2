@@ -2,7 +2,9 @@ module Lib
   class ParseInput
 
     # to change input to the desired format and returns command and args if any
-    def self.parse(input)
+    def parse(input)
+      raise CustomError, 'Empty Input' if input.empty?
+
       clear_input = input.gsub(',', ' ').split
       command = clear_input[0]
       args = {}

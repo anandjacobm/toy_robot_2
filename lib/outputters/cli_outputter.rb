@@ -1,3 +1,4 @@
+# class for cli outputs
 require_relative 'outputter_base'
 module Lib
   module Outputters

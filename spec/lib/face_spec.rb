@@ -23,10 +23,10 @@ RSpec.describe Lib::Face do
 
   context 'valid_face?' do
     it 'should return true if face is valid' do
-      expect(described_class.valid_face?('NORTH')).to be true
+      expect(subject.valid_face?('NORTH')).to be true
     end
     it 'should return false if face is invalid' do
-      expect(described_class.valid_face?('NORTHERN')).to be false
+      expect(subject.valid_face?('NORTHERN')).to be false
     end
   end
 end

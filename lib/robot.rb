@@ -1,5 +1,5 @@
+# Lib::Robot.new for initializing the class
 module Lib
-  # Robot.new for initializing the class
   class Robot
 
     attr_accessor :x, :y, :face

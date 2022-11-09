@@ -1,3 +1,4 @@
+# base class for all inputters
 module Lib
   module Inputters
     class InputterBase

@@ -1,3 +1,4 @@
+# class to handle right command
 require_relative 'command_base'
 module Lib
   module Commands

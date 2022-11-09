@@ -1,3 +1,4 @@
+# class for cli inputs
 require_relative 'inputter_base'
 module Lib
   module Inputters

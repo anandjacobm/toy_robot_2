@@ -1,3 +1,4 @@
+# class to handle report command
 require_relative 'command_base'
 module Lib
   module Commands

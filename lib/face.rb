@@ -24,7 +24,7 @@ module Lib
     end
 
     # to check whether the given face is a valid one as per the list
-    def self.valid_face?(face)
+    def valid_face?(face)
       FACES.include? face
     end
   end

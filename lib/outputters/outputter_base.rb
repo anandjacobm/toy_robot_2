@@ -1,3 +1,4 @@
+# base class for all outputters
 module Lib
   module Outputters
     class OutputterBase

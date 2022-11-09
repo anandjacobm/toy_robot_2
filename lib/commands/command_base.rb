@@ -1,3 +1,4 @@
+# base class for the commands
 module Lib
   module Commands
     class CommandBase
