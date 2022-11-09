@@ -13,6 +13,9 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+Dir['./lib/*.rb'].each { |file| require file }
+Dir['./lib/outputters/*.rb'].each { |file| require file }
+Dir['./lib/inputters/*.rb'].each { |file| require file }
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
