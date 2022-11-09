@@ -4,7 +4,7 @@ RSpec.describe Lib::Outputters::CliOutputter do
   let(:options) do
     {}
   end
-  let(:commands) { Lib::Command::COMMANDS_LIST }
+  let(:commands) { Lib::CommandController::COMMANDS_LIST }
   let(:robot) { Lib::Robot.new(face) }
   let(:face) { Lib::Face.new }
 

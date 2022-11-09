@@ -4,7 +4,7 @@ require_relative 'commands/move'
 require_relative 'commands/report'
 require_relative 'commands/right'
 module Lib
-  class Command
+  class CommandController
 
     PLACE = 'PLACE X,Y,FACE'.freeze
     MOVE = 'MOVE'.freeze

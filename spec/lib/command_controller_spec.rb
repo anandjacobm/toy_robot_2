@@ -1,5 +1,5 @@
-RSpec.describe Lib::Command do
-  subject(:command) { described_class }
+RSpec.describe Lib::CommandController do
+  subject(:command_controller) { described_class }
 
   let(:robot) { Lib::Robot.new(face) }
   let(:face) { Lib::Face.new }

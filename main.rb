@@ -19,7 +19,7 @@ module Main
   # infinite loop to get input and process it
   loop do
 
-    outputter.instruction_message(Lib::Command::COMMANDS_LIST)
+    outputter.instruction_message(Lib::CommandController::COMMANDS_LIST)
 
     input = inputter.input
 
@@ -28,7 +28,7 @@ module Main
     # changing the input to desired format and checking if it is valid command
     command, args = parser.parse(input)
     args[:outputter] = outputter
-    Lib::Command.to(command, robot, table, args).process
+    Lib::CommandController.to(command, robot, table, args).process
 
   rescue StandardError => e
     puts "\n#{e.message}"
